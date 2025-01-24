@@ -22,10 +22,26 @@ while (commands[0] != "Decode")
 	if (commands[0] == "Insert")
 	{
 		int position = int.Parse(commands[1]);
-		char symbol = char.Parse(commands[2]);
+		string symbol = commands[2];
 
+		word.Insert(position, symbol);
+	}
 
+	if (commands[0] == "ChangeAll")
+	{
+		string element = commands[1];
+		string newElement = commands[2];
+
+		for (int i = 0; i < encryptedMessage.Length;i++)
+		{
+			if (encryptedMessage[i].ToString() == element)
+			{
+				word.Replace(element, newElement);
+			}
+		}
 	}
 
 	commands = Console.ReadLine().Split("|");
 }
+
+Console.WriteLine($"The decrypted message is: {word}");
