@@ -10,7 +10,7 @@ StringBuilder destinations = new StringBuilder(stops);
 
 while (command != "Travel")
 {
-	string[] tokens = command.Split("|");
+	string[] tokens = command.Split(":");
 
 	if (tokens[0].Contains("Add"))
 	{
@@ -19,22 +19,40 @@ while (command != "Travel")
 
 		if (isValidIndex(index, stops.Length))
 		{
-
+			destinations.Insert(index, newStop);
 		}
 
-		destinations.Insert(index, newStop);
 	}
-	else if ()
+	else if (tokens[0].Contains("Remove"))
 	{
+		int startIndex = int.Parse(tokens[1]);
+		int endIndex = int.Parse(tokens[2]);
 
+		if (isValidIndex(startIndex, stops.Length) && isValidIndex(endIndex, stops.Length))
+		{
+			destinations.Remove(startIndex, endIndex - startIndex + 1);
+		}
+	}
+	else if (tokens[0] == "Switch")
+	{
+		string oldString = tokens[1];
+		string newString = tokens[2];
+
+		if (destinations.ToString().Contains(oldString))
+		{
+			destinations.Replace(oldString, newString);
+		}
 	}
 
+    Console.WriteLine(destinations);
 	command = Console.ReadLine();
 }
 
+Console.WriteLine($"Ready for world tour! Planned stops: {destinations}");
+
 bool isValidIndex(int index, int length)
 {
-	if (index > 0 && index <= length)
+	if (index >= 0 && index <= length)
 	{
 		return true;
 	}
