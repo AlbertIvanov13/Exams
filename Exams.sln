@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. NeedForSpeedIII", "03. 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. WorldTour", "04. WorldTour\04. WorldTour.csproj", "{82584D09-5CD8-4F31-B4F6-5165E93A0F20}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. MirrorWords", "05. MirrorWords\05. MirrorWords.csproj", "{CE345766-69D3-4B10-ABEE-92AC155150A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{82584D09-5CD8-4F31-B4F6-5165E93A0F20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82584D09-5CD8-4F31-B4F6-5165E93A0F20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82584D09-5CD8-4F31-B4F6-5165E93A0F20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE345766-69D3-4B10-ABEE-92AC155150A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE345766-69D3-4B10-ABEE-92AC155150A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE345766-69D3-4B10-ABEE-92AC155150A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE345766-69D3-4B10-ABEE-92AC155150A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
