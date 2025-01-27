@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. ThePianist", "06. ThePi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. SecretChat", "07. SecretChat\07. SecretChat.csproj", "{93C3F47A-B68C-4DD4-9C95-A073D96B428E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. AdAstra", "08. AdAstra\08. AdAstra.csproj", "{51EDF372-B5F1-4FC5-9BB2-045770FDB0D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{93C3F47A-B68C-4DD4-9C95-A073D96B428E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93C3F47A-B68C-4DD4-9C95-A073D96B428E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93C3F47A-B68C-4DD4-9C95-A073D96B428E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51EDF372-B5F1-4FC5-9BB2-045770FDB0D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51EDF372-B5F1-4FC5-9BB2-045770FDB0D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51EDF372-B5F1-4FC5-9BB2-045770FDB0D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51EDF372-B5F1-4FC5-9BB2-045770FDB0D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
